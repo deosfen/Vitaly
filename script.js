@@ -1,23 +1,21 @@
+let money = prompt("Ваш бюджет на месяц?", ''),
+	time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
-var LeftBorderWidth = 1;
-let Second = 2;
-const pi=3.14;
-
-console.log(LeftBorderWidth)
-
-let Person = {
-    name: "Jon",
-    age: 25,
-    isMarried: false
+let appData = {
+	budget: money,
+	expenses: {},
+	optionalExpenses: {},
+	income: [],
+	timeData: time,
+	savings: false
 };
 
-console.log(Person.name)
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a2 = prompt("Во сколько обойдется?", ''),
+	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a4 = prompt("Во сколько обойдется?", '');
 
-//let answer = confirm("Are you sure?")
-//console.log(answer)
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-let answer = prompt("Are you lefal age>?", "Yes")
-console.log(typeof(answer))
-
-
-
+alert(appData.budget / 30);
